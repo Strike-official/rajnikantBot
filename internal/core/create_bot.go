@@ -66,11 +66,11 @@ func CreateBot_2(request model.Request_Structure, userName string) *strike.Respo
 
 	question_object1 := strikeObject.Question("title").QuestionCard().
 		SetHeaderToQuestion(1, strike.HALF_WIDTH).
-		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{"https://abc.com"}, []string{"tumbnail.jpeg"}).
+		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{"https://raw.githubusercontent.com/Strike-official/rajnikantBot/main/connecting.jpg"}, []string{"tumbnail.jpeg"}).
 		AddTextRowToQuestion(strike.H4, "It's not 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐧𝐠 𝐩𝐞𝐨𝐩𝐥𝐞 logo, it's 𝐩𝐥𝐞𝐚𝐬𝐞 𝐝𝐨𝐧'𝐭 𝐠𝐨 𝐈 𝐬𝐭𝐢𝐥𝐥 𝐠𝐨𝐭 𝐬𝐨𝐦𝐞 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐥𝐞𝐟𝐭 sign 😅", "black", false).
 		AddTextRowToQuestion(strike.H4, "Now let's personalize your bot's greeting card", "black", false).
 		AddTextRowToQuestion(strike.H4, " ", "black", false).
-		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{"https://abc.com"}, []string{"tumbnail.jpeg"}).
+		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{"https://raw.githubusercontent.com/Strike-official/rajnikantBot/main/dazzle.png"}, []string{"tumbnail.jpeg"}).
 		AddTextRowToQuestion(strike.H4, "What should be the title?", "black", false)
 	question_object1.Answer(true).TextInput("Input Description")
 

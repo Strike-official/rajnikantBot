@@ -6,9 +6,16 @@ import (
 )
 
 type AppConfig struct {
-	Port        string `json:"port"`
-	LogFilePath string `json:"logFilePath"`
-	APIEp       string `json:"apiep"`
+	Port        string      `json:"port"`
+	LogFilePath string      `json:"logFilePath"`
+	Mongodb     MongoConfig `json:"mongodb"`
+	APIEp       string      `json:"apiep"`
+}
+
+type MongoConfig struct {
+	DriverName string `json:"driverName"`
+	SourceURL  string `json:"sourceURL"`
+	Database   string `json:"database"`
 }
 
 var (

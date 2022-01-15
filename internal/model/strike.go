@@ -57,6 +57,13 @@ type GeoLocation_struct struct {
 }
 
 type User_session_variables_struct struct {
-	Preference []string           `json:"preference"`
-	Lat_long   GeoLocation_struct `json:"lat_long,omitempty"`
+	Preference       []string           `json:"preference,omitempty"`
+	Lat_long         GeoLocation_struct `json:"lat_long,omitempty"`
+	UserName         string             `json:"userName,omitempty"`
+	BusinessName     string             `json:"businessName"`
+	BusinessCategory string             `json:"businessCategory"`
+	PicURL           string             `json:"picURL"`
+	Title            string             `json:"title"`
+	Subtitle         string             `json:"subtitle"`
+	Story            string             `json:"story"`
 }

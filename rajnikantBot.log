@@ -1,0 +1,494 @@
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create/     --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit/       --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/addHandler/ --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create/     --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit/       --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/addHandler/ --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create/     --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit/       --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/addHandler/ --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 02:36:47 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create/     --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit/       --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/addHandler/ --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 02:41:14 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN-debug] redirecting request 307: /rajnikantBot/create/ --> /rajnikantBot/create/
+[GIN-debug] redirecting request 307: /rajnikantBot/create/ --> /rajnikantBot/create/
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 02:51:38 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 02:51:49 <nil>
+[GIN] 2022/01/15 - 02:51:49 | 200 |     924.256µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 02:53:23 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 02:53:29 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0}}}
+[GIN] 2022/01/15 - 02:53:29 | 200 |     1.05892ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 02:56:35 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 02:56:43 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0}}}
+2022/01/15 02:56:43 &{      0 0 }
+[GIN] 2022/01/15 - 02:56:43 | 200 |    1.028613ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 03:03:48 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 03:04:01 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0}}}
+2022/01/15 03:04:01 &{https://github.com/Strike-official/rajnikantBot/blob/main/RajnikantBot.png @rajnikantBot sayak1997sen@gmail.com Rajnikant ✓ Offical Bot Manager Bhopal 23.2310402 77.45816359999999 }
+[GIN] 2022/01/15 - 03:04:01 | 200 |    1.384736ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 03:04:36 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 03:04:44 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0}}}
+2022/01/15 03:04:44 &{https://github.com/Strike-official/rajnikantBot/blob/main/RajnikantBot.png @rajnikantBot sayak1997sen@gmail.com Rajnikant ✓ Offical Bot Manager Bhopal 23.2310402 77.45816359999999 }
+2022/01/15 03:04:44 61e1ec74d92e5da71f3eac8e
+[GIN] 2022/01/15 - 03:04:44 | 200 |  290.399337ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 03:29:14 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 03:29:27 | 200 |    1.814349ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 03:44:08 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 03:44:19 | 200 |     870.621µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 11:33:30 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 11:33:53 | 200 |     957.762µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 11:38:18 | 200 |     195.581µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 11:38:40 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 11:38:56 | 200 |     848.504µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+2022/01/15 11:39:04 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0} []}}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 200
+[GIN] 2022/01/15 - 11:39:04 | 200 |     396.132µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN] 2022/01/15 - 11:47:02 | 200 |     205.808µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+2022/01/15 11:47:25 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0} []}}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 200
+[GIN] 2022/01/15 - 11:47:25 | 200 |     308.833µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 11:48:35 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 11:48:47 &{200 0xc0003ce9c0}
+[GIN] 2022/01/15 - 11:48:47 | 200 |    1.128323ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 200
+[GIN] 2022/01/15 - 11:49:39 | 200 |     118.644µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 11:53:29 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 11:53:42 | 200 |     666.851µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+2022/01/15 11:53:47 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0} []}}
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 200
+[GIN] 2022/01/15 - 11:53:47 | 200 |     409.219µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 11:55:00 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 11:55:07 | 200 |     772.363µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+2022/01/15 11:55:15 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0} Hjk}}
+[GIN] 2022/01/15 - 11:55:15 | 200 |     230.174µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 12:43:24 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 12:43:44 | 200 |     753.135µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 12:43:49 | 200 |     129.033µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 12:44:48 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 12:45:01 | 200 |     904.647µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 12:45:05 | 200 |     172.245µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN] 2022/01/15 - 12:45:17 | 200 |      213.27µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN] 2022/01/15 - 12:45:29 | 200 |     160.025µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 12:45:39 | 200 |     211.974µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN] 2022/01/15 - 12:45:47 | 200 |     180.625µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 12:46:07 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+2022/01/15 12:46:07 [startAPIs] Failed to start APIs. Error: listen tcp :7001: bind: address already in use
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 12:46:31 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 12:46:51 | 200 |     852.934µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 12:46:57 | 200 |     143.655µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 12:52:20 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 12:52:32 | 200 |     860.876µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 12:52:48 | 200 |     104.904µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_2    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_2 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 18:08:44 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_2    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_2 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 18:09:18 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 18:14:09 | 200 |      856.37µs |    49.37.67.208 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 18:14:18 | 200 |     166.945µs |    49.37.67.208 | POST     "/rajnikantBot/create_1"
+2022/01/15 18:15:24 Username from previous API :  yello
+[GIN] 2022/01/15 - 18:15:24 | 200 |     206.571µs |    49.37.67.208 | POST     "/rajnikantBot/create_2?userName=yello"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_2    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_2 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 18:25:05 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 18:25:28 | 200 |    1.229088ms |    49.37.67.208 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 18:26:09 | 200 |     168.649µs |    49.37.67.208 | POST     "/rajnikantBot/create_1"
+[GIN] 2022/01/15 - 18:27:37 | 200 |     270.068µs |    49.37.67.208 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 18:28:02 | 200 |     199.031µs |    49.37.67.208 | POST     "/rajnikantBot/create_1"
+2022/01/15 18:29:08 &{edghwvhf inception Not Provided inception bot software bot NA 23.2310402 77.45816359999999  60f47618b6a1c244e30bfbbc}
+2022/01/15 18:29:09 61e2c51c36463ba10d71ae54
+[GIN] 2022/01/15 - 18:29:09 | 200 |   485.81874ms |    49.37.67.208 | POST     "/rajnikantBot/create_2?userName=inception"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_2    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_2 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 19:29:48 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 19:30:09 | 200 |    1.267069ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 19:30:32 | 200 |      99.041µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+2022/01/15 19:31:07 61e2d3a3979f11beb73c39f6
+[GIN] 2022/01/15 - 19:31:07 | 500 |  543.432896ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_2?userName=Jio"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_2    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_2 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_3    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_3 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 20:53:11 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 20:53:43 | 200 |     978.057µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create"
+[GIN] 2022/01/15 - 20:53:50 | 200 |     180.756µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_1"
+[GIN] 2022/01/15 - 20:54:16 | 200 |  633.668396ms | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_2?userName=Hobo"
+2022/01/15 20:55:47 {{61a30771b6a1c244e30bfc23 61e181985b37ca0b8977b39e createBot️ {25.6204265 85.0906978} Shashank Sharma A.G colony, Chetna Samiti, Near Bank of Baroda, Patna 800025 9340212623} {[] {0 0}    }}
+[GIN] 2022/01/15 - 20:55:47 | 200 |     363.437µs | 2405:201:a407:91cb:3535:bf33:7158:c569 | POST     "/rajnikantBot/create_3?bot_id=61e2e71f5bf33da7581218f8&pic_url=Llfjsjdb"
+[GIN-debug] [WARNING] Now Gin requires Go 1.13+.
+
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /rajnikantBot/create      --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_1    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_1 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_2    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_2 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/create_3    --> github.com/Strike-official/rajnikantBot/internal/controller.CreateBot_3 (3 handlers)
+[GIN-debug] POST   /rajnikantBot/edit        --> github.com/Strike-official/rajnikantBot/internal/controller.EditBot (3 handlers)
+[GIN-debug] POST   /rajnikantBot/add         --> github.com/Strike-official/rajnikantBot/internal/controller.AddHandlerToBot (3 handlers)
+2022/01/15 21:28:53 mongodb://shashank404error:Y9ivXgMQ5ZrjL4N@parkpoint-shard-00-00.0bxqn.mongodb.net:27017,parkpoint-shard-00-01.0bxqn.mongodb.net:27017,parkpoint-shard-00-02.0bxqn.mongodb.net:27017/parkpoint?ssl=true&replicaSet=atlas-21pobg-shard-0&authSource=admin&retryWrites=true&w=majority
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :7001
+[GIN] 2022/01/15 - 21:29:57 | 200 |     938.145µs |    49.37.67.208 | POST     "/rajnikantBot/create"

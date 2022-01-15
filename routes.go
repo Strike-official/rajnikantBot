@@ -7,18 +7,13 @@ import (
 
 func initializeRoutes(router *gin.Engine) {
 
-	cb := router.Group("/rajnikantBot/create")
+	cb := router.Group("/rajnikantBot")
 	{
-		cb.POST("/", controller.CreateBot)
-	}
-
-	eb := router.Group("/rajnikantBot/edit")
-	{
-		eb.POST("/", controller.EditBot)
-	}
-
-	ab := router.Group("/rajnikantBot/addHandler")
-	{
-		ab.POST("/", controller.AddHandlerToBot)
+		cb.POST("/create", controller.CreateBot)
+		cb.POST("/create_1", controller.CreateBot_1)
+		cb.POST("/create_2", controller.CreateBot_2)
+		cb.POST("/create_3", controller.CreateBot_3)
+		cb.POST("/edit", controller.EditBot)
+		cb.POST("/add", controller.AddHandlerToBot)
 	}
 }

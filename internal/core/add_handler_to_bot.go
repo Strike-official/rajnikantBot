@@ -5,7 +5,7 @@ import (
 	"github.com/strike-official/go-sdk/strike"
 )
 
-func AddHandlerToBot(model.Request_Structure) *strike.Response_structure {
+func AddHandlerToBot(request model.Request_Structure) *strike.Response_structure {
 	var r *strike.Response_structure
 	return r
 }

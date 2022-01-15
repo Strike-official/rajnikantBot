@@ -7,6 +7,7 @@ import (
 
 	"github.com/Strike-official/rajnikantBot/configmanager"
 	"github.com/Strike-official/rajnikantBot/internal/model"
+	pkg "github.com/Strike-official/rajnikantBot/pkg/mongodb"
 	"github.com/gin-gonic/gin"
 )
 
@@ -25,6 +26,9 @@ func main() {
 	gin.DefaultWriter = io.MultiWriter(logFile, os.Stdout)
 	router := gin.Default()
 	initializeRoutes(router)
+
+	// Initialize mongodb
+	pkg.Init()
 
 	// Start serving the application
 	err = router.Run(model.Conf.Port)

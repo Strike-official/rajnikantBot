@@ -17,6 +17,36 @@ func CreateBot(ctx *gin.Context) {
 	ctx.JSON(200, strikeObj)
 }
 
+func CreateBot_1(ctx *gin.Context) {
+	var request model.Request_Structure
+	if err := ctx.BindJSON(&request); err != nil {
+		fmt.Println("Error:", err)
+	}
+	strikeObj := core.CreateBot_1(request)
+	ctx.JSON(200, strikeObj)
+}
+
+func CreateBot_2(ctx *gin.Context) {
+	var request model.Request_Structure
+	if err := ctx.BindJSON(&request); err != nil {
+		fmt.Println("Error:", err)
+	}
+	username := ctx.Query("userName")
+	strikeObj := core.CreateBot_2(request, username)
+	ctx.JSON(200, strikeObj)
+}
+
+func CreateBot_3(ctx *gin.Context) {
+	var request model.Request_Structure
+	if err := ctx.BindJSON(&request); err != nil {
+		fmt.Println("Error:", err)
+	}
+	bot_id := ctx.Query("bot_id")
+	pic_url := ctx.Query("pic_url")
+	strikeObj := core.CreateBot_3(request, bot_id, pic_url)
+	ctx.JSON(200, strikeObj)
+}
+
 func EditBot(ctx *gin.Context) {
 	var request model.Request_Structure
 	if err := ctx.BindJSON(&request); err != nil {

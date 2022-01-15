@@ -93,7 +93,7 @@ func CreateBot_3(request model.Request_Structure, bot_id string, pic_url string)
 	strikeObject := strike.Create("getting_started", "")
 	strikeObject.Question("").QuestionCard().
 		SetHeaderToQuestion(1, strike.HALF_WIDTH).
-		AddTextRowToQuestion(strike.H4, "Congractulations on your new bot. You can add your bot using this link : "+botLink+"Please see your bots section to edit your bot or create more Action Handlers. Read our docs here : "+docLink, "black", false)
+		AddTextRowToQuestion(strike.H4, "Congractulations on your new bot. You can add your bot using this link : "+botLink+" Please see your bots section to edit your bot or create more Action Handlers. Read our docs here : "+docLink, "black", false)
 	addBotSchemaToMongo(request, bot_id, pic_url)
 	return strikeObject
 }

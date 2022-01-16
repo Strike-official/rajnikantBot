@@ -1,0 +1,4 @@
+vendor
+.log
+.prod
+config.json

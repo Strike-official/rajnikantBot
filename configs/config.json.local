@@ -1,0 +1,14 @@
+{
+    "port": ":6004",
+    "logFilePath":"rajnikantBot.log",
+    "mysql": {
+        "driverName": "mysql",
+        "dataSourceName": ""
+    },
+    "mongodb" : {
+        "driverName":"mongodb",
+        "sourceURL":"",
+        "database":""
+    },
+    "apiep": "http://5d03-2405-201-a407-91cb-74f9-26cb-7c83-9faa.ngrok.io/rajnikantBot"
+}

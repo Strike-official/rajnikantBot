@@ -13,7 +13,7 @@ func initializeRoutes(router *gin.Engine) {
 		cb.POST("/create_1", controller.CreateBot_1)
 		cb.POST("/create_2", controller.CreateBot_2)
 		cb.POST("/create_3", controller.CreateBot_3)
-		cb.POST("/edit", controller.EditBot)
-		cb.POST("/add", controller.AddHandlerToBot)
+		cb.POST("/your_bot", controller.YourBots)
+		cb.POST("/your_bot_1", controller.YourBots_1)
 	}
 }

@@ -23,3 +23,5 @@ func Insert(collection string, customInsertStruct interface{}) string {
 	}
 	return resultID
 }
+
+//http://ec2-18-218-96-97.us-east-2.compute.amazonaws.com

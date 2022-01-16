@@ -5,6 +5,8 @@ import (
 
 	"github.com/Strike-official/rajnikantBot/internal/model"
 	pkg "github.com/Strike-official/rajnikantBot/pkg/mongodb"
+
+	tinyUrl "github.com/Strike-official/rajnikantBot/pkg/tinyurl"
 	"github.com/strike-official/go-sdk/strike"
 )
 
@@ -89,11 +91,17 @@ func CreateBot_2(request model.Request_Structure, userName string) *strike.Respo
 
 func CreateBot_3(request model.Request_Structure, bot_id string, pic_url string) *strike.Response_structure {
 	botLink := "https://bybrisk.page.link/?link=https://bybrisk.com?business_id=" + bot_id + "&apn=com.bybrisk.strike.app"
+	botLinkOriginal := botLink
+	l := tinyUrl.FetchTinyUrl(botLink)
+	if l != "" {
+		botLink = l
+	}
 	docLink := "https://bybrisk-strike.gitbook.io"
 	strikeObject := strike.Create("getting_started", "")
 	strikeObject.Question("").QuestionCard().
 		SetHeaderToQuestion(1, strike.HALF_WIDTH).
-		AddTextRowToQuestion(strike.H4, "Congractulations on your new bot. You can add your bot using this link : "+botLink+" Please see your bots section to edit your bot or create more Action Handlers. Read our docs here : "+docLink, "black", false)
+		AddTextRowToQuestion(strike.H4, "Congractulations on your new bot. \n\n You can add your bot using this link "+botLink+" \n\nPlease see your bots section to edit your bot or create more Action Handlers. Read our docs here : "+docLink, "black", false).
+		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + botLinkOriginal}, []string{"tumbnail.jpeg"})
 	addBotSchemaToMongo(request, bot_id, pic_url)
 	return strikeObject
 }

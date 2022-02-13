@@ -1,13 +1,40 @@
 package core
 
 import (
+	"fmt"
 	"log"
 
 	"github.com/Strike-official/rajnikantBot/internal/model"
 	pkg "github.com/Strike-official/rajnikantBot/pkg/mongodb"
 
+	sesMailer "github.com/Strike-official/rajnikantBot/pkg/sesMailer"
 	tinyUrl "github.com/Strike-official/rajnikantBot/pkg/tinyurl"
 	"github.com/strike-official/go-sdk/strike"
+)
+
+var (
+	mailSubject = "Welcome👋 to the Strike Developer Community [🤖 %s]"
+	htmlBody    = "<p>Hi,</p>" +
+		"<p> Welcome to Strike developers community. And congratualtions on making your first application live on Strike platform.</p>" +
+		"<p>Below are the details of your bot</p>" +
+		"<ul>" +
+		"<li>User Id: %s </li>" +
+		"<li>Bot Name: %s </li>" +
+		"<li>Bot ID: %s </li>" +
+		"<li>Bot QR Code: Do share the QR or AppLink with your friends, and let them know how cool your app is 😎 :</li>" +
+		"<img src=%s width='200' height='200'><br>" +
+		"<li>Bot Link - <a href=%s>%s</a></li></ul>" +
+		"<br>" +
+		"<p>Currently your application is in development mode, please use rajnikant-bot to update the API Link of your bot. <br>Find the below resources on how to create an application which interfaces well with strike platform.</p>" +
+		"<a href='https://bybrisk-strike.gitbook.io/strike-developer-community'>How to create app on Strike (Extensive documentation)</a><br>" +
+		"<a href='https://bybrisk-strike.gitbook.io/strike-developer-community/go'>Create App with Strike-Go-SDK</a><br>" +
+		"<a href='https://bybrisk-strike.gitbook.io/strike-developer-community/go-1'>Create App with Strike-Go-SDK</a><br>" +
+		"<a href='https://bybrisk-strike.gitbook.io/strike-developer-community'>Update API of the application using Rajnikant</a><br>" +
+		"<a href='https://github.com/Strike-official'>Github sample applications</a><br>" +
+		"<p>Please reach out to, strike.info@bybrisk.com for any queries</p>" +
+		"<br>" +
+		"<p>Regards,<br>Strike</p>"
+	textBody = "Welcome to Strike developers community. And congratualtions on making your first application live on Strike platform."
 )
 
 func CreateBot(request model.Request_Structure) *strike.Response_structure {
@@ -41,9 +68,15 @@ func CreateBot_1(request model.Request_Structure) *strike.Response_structure {
 		question_object2.Answer(true).TextInput("Input Description")
 
 		question_object3 := strikeObject.Question("picURL").QuestionText().
-			SetTextToQuestion("One last thing! Please provide the profile pic URL of the bot.", "Text Description, getting used for testing purpose.")
+			SetTextToQuestion("Please provide the profile pic URL of the bot.", "Text Description, getting used for testing purpose.")
 
 		question_object3.Answer(true).TextInput("Input Description")
+
+		question_object4 := strikeObject.Question("emailId").QuestionText().
+			SetTextToQuestion("What is your email? preferably the developer's email-id", "Text Description, getting used for testing purpose.")
+
+		question_object4.Answer(true).TextInput("Input Description")
+
 		return strikeObject
 	} else {
 		strikeObject = strike.Create("getting_started", model.Conf.APIEp+"/create_1")
@@ -64,7 +97,7 @@ func CreateBot_2(request model.Request_Structure, userName string) *strike.Respo
 	id := addBotAccountToMongo(request, userName)
 
 	// Create bot schema
-	strikeObject := strike.Create("getting_started", model.Conf.APIEp+"/create_3?bot_id="+id+"&pic_url="+request.User_session_variables.PicURL)
+	strikeObject := strike.Create("getting_started", model.Conf.APIEp+"/create_3?bot_id="+id+"&pic_url="+request.User_session_variables.PicURL+"&email_id="+request.User_session_variables.EmailId)
 
 	question_object1 := strikeObject.Question("title").QuestionCard().
 		SetHeaderToQuestion(1, strike.HALF_WIDTH).
@@ -89,20 +122,25 @@ func CreateBot_2(request model.Request_Structure, userName string) *strike.Respo
 	return strikeObject
 }
 
-func CreateBot_3(request model.Request_Structure, bot_id string, pic_url string) *strike.Response_structure {
+func CreateBot_3(request model.Request_Structure, bot_id string, pic_url, email_id string) *strike.Response_structure {
 	botLink := "https://bybrisk.page.link/?link=https://bybrisk.com?business_id=" + bot_id + "&apn=com.bybrisk.strike.app"
 	botLinkOriginal := botLink
 	l := tinyUrl.FetchTinyUrl(botLink)
 	if l != "" {
 		botLink = l
 	}
+	botQrLink := "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + botLinkOriginal
 	docLink := "https://bybrisk-strike.gitbook.io"
 	strikeObject := strike.Create("getting_started", "")
 	strikeObject.Question("").QuestionCard().
 		SetHeaderToQuestion(1, strike.HALF_WIDTH).
-		AddTextRowToQuestion(strike.H4, "Congractulations on your new bot. \n\n You can add your bot using this link "+botLink+" \n\nPlease see your bots section to edit your bot or create more Action Handlers. Read our docs here : "+docLink, "black", false).
-		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{"https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + botLinkOriginal}, []string{"tumbnail.jpeg"})
+		AddTextRowToQuestion(strike.H4, "Congractulations on your new bot. \n\n You can add your bot using this link "+botLink+" \n\nPlease see your bots section to edit your bot or create more Action Handlers. Read our docs here : "+email_id+docLink, "black", false).
+		AddGraphicRowToQuestion(strike.PICTURE_ROW, []string{botQrLink}, []string{"tumbnail.jpeg"})
 	addBotSchemaToMongo(request, bot_id, pic_url)
+	mailSubject = fmt.Sprintf(mailSubject, request.User_session_variables.Title)
+	htmlBody = fmt.Sprintf(htmlBody, request.Bybrisk_session_variables.UserId, request.User_session_variables.Title, bot_id, botQrLink, botLink, request.User_session_variables.Title)
+	fmt.Println(htmlBody)
+	sesMailer.SendMail(email_id, mailSubject, htmlBody, textBody)
 	return strikeObject
 }
 
@@ -112,7 +150,7 @@ func addBotAccountToMongo(request model.Request_Structure, userName string) stri
 		PicURL:           request.User_session_variables.PicURL,
 		UserName:         userName,
 		BusinessName:     request.User_session_variables.BusinessName,
-		Email:            "Not Provided",
+		Email:            request.User_session_variables.EmailId,
 		BusinessCategory: request.User_session_variables.BusinessCategory,
 		Address:          "NA",
 		Latitude:         23.2310402,

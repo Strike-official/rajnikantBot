@@ -43,7 +43,8 @@ func CreateBot_3(ctx *gin.Context) {
 	}
 	bot_id := ctx.Query("bot_id")
 	pic_url := ctx.Query("pic_url")
-	strikeObj := core.CreateBot_3(request, bot_id, pic_url)
+	email_id := ctx.Query("email_id")
+	strikeObj := core.CreateBot_3(request, bot_id, pic_url, email_id)
 	ctx.JSON(200, strikeObj)
 }
 

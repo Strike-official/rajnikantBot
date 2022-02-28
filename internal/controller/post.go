@@ -61,6 +61,15 @@ func YourBots_1(ctx *gin.Context) {
 	if err := ctx.BindJSON(&request); err != nil {
 		fmt.Println("Error:", err)
 	}
-	strikeObj := core.YourBots_1(request)
+	strikeObj := core.YourBots_1(request, ctx.Query("botName"), ctx.Query("actionName"))
+	ctx.JSON(200, strikeObj)
+}
+
+func YourBots_2(ctx *gin.Context) {
+	var request model.Request_Structure
+	if err := ctx.BindJSON(&request); err != nil {
+		fmt.Println("Error:", err)
+	}
+	strikeObj := core.YourBots_2(request, ctx.Query("botName"), ctx.Query("actionName"))
 	ctx.JSON(200, strikeObj)
 }

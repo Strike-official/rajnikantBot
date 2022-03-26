@@ -22,6 +22,11 @@ func YourBots(request model.Request_Structure) *strike.Response_structure {
 
 	answer_object := question_object.Answer(false).AnswerCardArray(strike.VERTICAL_ORIENTATION)
 
+	// Handle no bot case
+	if len(botNames) == 0 {
+		answer_object = answer_object.AnswerCard().SetHeaderToAnswer(10, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "No bot created", "#008f5a", false)
+	}
+
 	for _, botName := range botNames {
 		answer_object = answer_object.AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, botName, "#008f5a", false)
 	}
@@ -31,8 +36,8 @@ func YourBots(request model.Request_Structure) *strike.Response_structure {
 
 	question_object2.Answer(false).AnswerCardArray(strike.VERTICAL_ORIENTATION).
 		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Modify Bot Details", "#008f5a", false).
-		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Update Action Handlers", "#008f5a", false)
-	//AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Delete Bot", "#008f5a", false)
+		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Update Action Handlers", "#008f5a", false).
+		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Add Action Handler", "#008f5a", false)
 
 	return strikeObject
 }
@@ -134,7 +139,8 @@ func updateActionHandlers(Values ...interface{}) *strike.Response_structure {
 
 	question_object1.Answer(false).AnswerCardArray(strike.VERTICAL_ORIENTATION).
 		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Modify Handler Name", "#008f5a", false).
-		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Update API Endpoint", "#008f5a", false)
+		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Update API Endpoint", "#008f5a", false).
+		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "Delete Action Handler", "red", false)
 
 	question_object2 := strikeObject.Question("modifyDetailValue").QuestionText().
 		SetTextToQuestion("What's the new value?", "Text Description, getting used for testing purpose.")
@@ -151,6 +157,15 @@ func updateActionHandlersHelper(Values ...interface{}) *strike.Response_structur
 		updateActionHandlerArrayHelper(Values[0].(string), val.ModifyDetailValue, val.ActionHandlerName[0], "initialise.actionhandlers.$.apiobject.apiurl")
 	case "Modify Handler Name":
 		modifyActionHandlerName(Values[0].(string), val.ModifyDetailValue, val.ActionHandlerName[0], "initialise.actionhandlers.$.observedname")
+	case "Delete Action Handler":
+		log.Println("delete action handler")
+		deleteActionHandler(Values[0].(string), val.ActionHandlerName[0])
+		strikeObject := strike.Create("your_bot", model.Conf.APIEp+"/your_bot")
+		question_object := strikeObject.Question("na").QuestionText().
+			SetTextToQuestion(val.ActionHandlerName[0]+" Deleted!", "Text Description, getting used for testing purpose.")
+		question_object.Answer(false).AnswerCardArray(strike.VERTICAL_ORIENTATION).
+			AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "↩ Back", "#008f5a", false)
+		return strikeObject
 	}
 
 	nPrefix := strings.ReplaceAll(strings.ReplaceAll(action, "Modify", ""), "Update", "")
@@ -163,20 +178,47 @@ func updateActionHandlersHelper(Values ...interface{}) *strike.Response_structur
 	return strikeObject
 }
 
-func deleteBot(Values ...interface{}) *strike.Response_structure {
-	//Delete the bot from our system
-	log.Println("Deleting bot : ", Values[0])
-	var r *strike.Response_structure
-	return r
+func addActionHandler(Values ...interface{}) *strike.Response_structure {
+	var botUserName string
+	switch v := Values[0].(type) {
+	case string:
+		botUserName = v
+	case model.Request_Structure:
+		botUserName = Values[0].(model.Request_Structure).User_session_variables.BotUserName[0]
+	}
+	strikeObject := strike.Create("your_bot", model.Conf.APIEp+"/your_bot_2?botName="+botUserName+"&actionName=addActionHandlersHelper")
 
+	question_object1 := strikeObject.Question("newHandlerName").QuestionText().
+		SetTextToQuestion("Handler name (Visible to users)?", "Text Description, getting used for testing purpose.")
+	question_object1.Answer(true).TextInput("Input Description")
+
+	question_object2 := strikeObject.Question("newHandlerEndpoint").QuestionText().
+		SetTextToQuestion("API Endpoint for the new handler?", "Text Description, getting used for testing purpose.")
+	question_object2.Answer(true).TextInput("Input Description")
+
+	return strikeObject
+}
+
+func addActionHandlersHelper(Values ...interface{}) *strike.Response_structure {
+	handlerName := Values[1].(model.Request_Structure).User_session_variables.NewHandlerName
+	apiURL := Values[1].(model.Request_Structure).User_session_variables.NewHandlerEndpoint
+	addActionHandlerToMongo(Values[0].(string), handlerName, handlerName, "API", apiURL)
+
+	strikeObject := strike.Create("your_bot", model.Conf.APIEp+"/your_bot")
+	question_object := strikeObject.Question("na").QuestionText().
+		SetTextToQuestion(handlerName+" handler added to your bot!", "Text Description, getting used for testing purpose.")
+	question_object.Answer(false).AnswerCardArray(strike.VERTICAL_ORIENTATION).
+		AnswerCard().SetHeaderToAnswer(1, strike.HALF_WIDTH).AddTextRowToAnswer(strike.H4, "↩ Back", "#008f5a", false)
+	return strikeObject
 }
 
 var actionFuncMap map[string]func(...interface{}) *strike.Response_structure = map[string]func(...interface{}) *strike.Response_structure{
 	"Update Action Handlers":     updateActionHandlers,
 	"Modify Bot Details":         modifyBotDetails,
-	"Delete bot":                 deleteBot,
+	"Add Action Handler":         addActionHandler,
 	"updateBotDetailByField":     updateBotDetailByField,
 	"updateActionHandlersHelper": updateActionHandlersHelper,
+	"addActionHandlersHelper":    addActionHandlersHelper,
 }
 
 // DB helper functions
@@ -234,5 +276,23 @@ func modifyActionHandlerName(botUsername, modifiedValue, observedName, modifiedF
 	update := bson.M{"$set": bson.M{modifiedField: modifiedValue}}
 	if _, err := pkg.Update("bot-schema", filter, update); err != nil {
 		log.Println("Error updating Action Handlers: ", err)
+	}
+}
+
+func addActionHandlerToMongo(botUsername, handlerName, observedName, handlerType, apiURL string) {
+	filter := bson.M{"businessid": getBotBusinessIdByBotname(botUsername)}
+	update := bson.M{"$push": bson.M{"initialise.actionhandlers": bson.M{"handler": handlerName, "observedname": observedName, "handlertype": handlerType, "apiobject": bson.M{"apiurl": apiURL}}}}
+	_, err := pkg.Update("bot-schema", filter, update)
+	if err != nil {
+		log.Println("[MONGO ERROR] Error adding action handler: ", err)
+	}
+}
+
+func deleteActionHandler(botUsername, handlerName string) {
+	filter := bson.M{"businessid": getBotBusinessIdByBotname(botUsername)}
+	update := bson.M{"$pull": bson.M{"initialise.actionhandlers": bson.M{"observedname": handlerName}}}
+	_, err := pkg.Update("bot-schema", filter, update)
+	if err != nil {
+		log.Println("[MONGO ERROR] Error deleting action handler: ", err)
 	}
 }

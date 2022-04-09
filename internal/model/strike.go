@@ -63,6 +63,7 @@ type User_session_variables_struct struct {
 	BusinessName     string             `json:"businessName"`
 	BusinessCategory string             `json:"businessCategory"`
 	PicURL           string             `json:"picURL"`
+	EmailId          string             `json:"emailId"`
 	Title            string             `json:"title"`
 	Subtitle         string             `json:"subtitle"`
 	Story            string             `json:"story"`

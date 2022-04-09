@@ -28,7 +28,13 @@ func main() {
 	initializeRoutes(router)
 
 	// Initialize mongodb
-	pkg.Init()
+	mongoConfig := configmanager.MongoConfig{
+		DriverName: model.Conf.Mongodb.DriverName,
+		SourceURL:  model.Conf.Mongodb.SourceURL,
+		Database:   model.Conf.Mongodb.Database,
+	}
+
+	pkg.Init(mongoConfig)
 
 	// Start serving the application
 	err = router.Run(model.Conf.Port)

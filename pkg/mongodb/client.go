@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/Strike-official/rajnikantBot/internal/model"
+	"github.com/Strike-official/rajnikantBot/configmanager"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
@@ -14,9 +14,9 @@ var errors error
 var contextForDb context.Context
 var Database *mongo.Database
 
-func Init() {
-	log.Println(model.Conf.Mongodb.SourceURL)
-	c, errors = mongo.NewClient(options.Client().ApplyURI(model.Conf.Mongodb.SourceURL))
+func Init(config configmanager.MongoConfig) {
+	log.Println(config.SourceURL)
+	c, errors = mongo.NewClient(options.Client().ApplyURI(config.SourceURL))
 	if errors != nil {
 		log.Println("Mongo client connection failed")
 		log.Println(errors)
@@ -28,7 +28,7 @@ func Init() {
 		log.Println(errors)
 	}
 
-	Database = c.Database(model.Conf.Mongodb.Database)
+	Database = c.Database(config.Database)
 }
 
 /*func InsertOne(connectionInfo *structs.ConnectToDataBase,collectionString string,customInsertStruct map[string]interface{}) string {

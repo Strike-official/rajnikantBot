@@ -57,14 +57,22 @@ type GeoLocation_struct struct {
 }
 
 type User_session_variables_struct struct {
-	Preference       []string           `json:"preference,omitempty"`
-	Lat_long         GeoLocation_struct `json:"lat_long,omitempty"`
-	UserName         string             `json:"userName,omitempty"`
-	BusinessName     string             `json:"businessName"`
-	BusinessCategory string             `json:"businessCategory"`
-	PicURL           string             `json:"picURL"`
-	EmailId          string             `json:"emailId"`
-	Title            string             `json:"title"`
-	Subtitle         string             `json:"subtitle"`
-	Story            string             `json:"story"`
+	Preference         []string           `json:"preference,omitempty"`
+	Lat_long           GeoLocation_struct `json:"lat_long,omitempty"`
+	UserName           string             `json:"userName,omitempty"`
+	BusinessName       string             `json:"businessName"`
+	BusinessCategory   string             `json:"businessCategory"`
+	PicURL             string             `json:"picURL"`
+	Title              string             `json:"title"`
+	Subtitle           string             `json:"subtitle"`
+	Story              string             `json:"story"`
+	BotUserName        []string           `json:"botUserName"`
+	ActionOnBot        []string           `json:"actionOnBot"`
+	ActionHandlerName  []string           `json:"actionHandlerName"`
+	ActionOnHandler    []string           `json:"actionOnHandler"`
+	ModifyDetailField  []string           `json:"modifyDetailField"`
+	ModifyDetailValue  string             `json:"modifyDetailValue"`
+	NA                 []string           `json:"na"`
+	NewHandlerName     string             `json:"newHandlerName"`
+	NewHandlerEndpoint string             `json:"newHandlerEndpoint"`
 }

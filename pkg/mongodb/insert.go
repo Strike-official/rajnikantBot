@@ -1,7 +1,6 @@
 package pkg
 
 import (
-	"fmt"
 	"log"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -13,13 +12,13 @@ func Insert(collection string, customInsertStruct interface{}) string {
 	collectionName := Database.Collection(collection)
 	result, insertErr := collectionName.InsertOne(contextForDb, customInsertStruct)
 	if insertErr != nil {
-		log.Println("Insert in mongodb failed")
-		log.Println(insertErr)
-	} else {
-		fmt.Println("InsertOne() API result:", result)
-		newID := result.InsertedID
-		fmt.Println("Inserted new document to mongodb : ", newID)
-		resultID = newID.(primitive.ObjectID).Hex()
+		log.Println("Mongo Insert Failed : ", insertErr)
+		return resultID
 	}
+
+	resultID = result.InsertedID.(primitive.ObjectID).Hex()
+
 	return resultID
 }
+
+//http://ec2-18-218-96-97.us-east-2.compute.amazonaws.com

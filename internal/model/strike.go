@@ -75,4 +75,5 @@ type User_session_variables_struct struct {
 	NA                 []string           `json:"na"`
 	NewHandlerName     string             `json:"newHandlerName"`
 	NewHandlerEndpoint string             `json:"newHandlerEndpoint"`
+	EmailId            string             `json:"emailId"`
 }
